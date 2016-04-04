@@ -46,10 +46,10 @@ Notes:
 ======
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
-- 
+
 OPEARATION
-===================================
-Run_analysis.R file included within this package  downloads the orignal data sets and then performs the following operations
+==========
+Run_analysis.R file included within this package  downloads the orignal data sets and then performs the following operations. Please refer to ReadMe for further details.
 
 <li>Merges the training and the test sets to create one data set.
 <li>Extracts only the measurements on the mean and standard deviation for each measurement.
