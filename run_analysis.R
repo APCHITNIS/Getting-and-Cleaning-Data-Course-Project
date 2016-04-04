@@ -1,15 +1,3 @@
-#Create directory dataset to store the dataset
-if(!file.exists("./dataset")){
-        dir.create("./dataset");
-}
-
-# download the dataset zip file
-zipfile <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip";
-download.file(zipfile,destfile = "./dataset/dataset.zip", mode="wb");
-
-#Unzip the file
-unzip(zipfile = "./dataset/dataset.zip", files = NULL, list=FALSE, overwrite = TRUE, junkpaths = FALSE, exdir = ".", unzip = "internal", setTimes = FALSE);
-
 #Load common items such as activity lables and Features
 activity_label <- read.table("./UCI HAR Dataset/activity_labels.txt", header = FALSE)
 features <- read.table("./UCI HAR Dataset/features.txt", header = FALSE)
