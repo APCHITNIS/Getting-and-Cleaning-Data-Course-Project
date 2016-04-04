@@ -30,8 +30,6 @@ names(Y_train) <- c("Acitivity_ID");
 subject_train <- read.table("./UCI HAR Dataset/train/y_train.txt", header = FALSE);
 names(subject_train) <- c("Subject_ID");
 
-
-
 # STEP 1 - Merges the training and the test sets to create one data set.
 test_data <- cbind(subject_test, Y_test, X_test);
 #names(test_data);
